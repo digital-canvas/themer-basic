@@ -5,8 +5,8 @@ class ThemerBasic {
 	public function __construct() {
 		add_action( 'after_setup_theme', array( $this, 'add_theme_support' ) );
 		add_action( 'init', array( $this, 'register_side_bars' ) );
-		add_action( 'optitheme_header', array( $this, 'print_default_header' ) );
-		add_action( 'optitheme_footer', array( $this, 'print_default_footer' ) );
+		add_action( 'themerbasic_header', array( $this, 'print_default_header' ) );
+		add_action( 'themerbasic_footer', array( $this, 'print_default_footer' ) );
 		add_action( 'after_setup_theme', array( $this, 'register_beaver_themer_support' ) );
 		add_action( 'wp', array( $this, 'header_footer_render' ) );
 		add_filter( 'fl_theme_builder_part_hooks', array( $this, 'register_part_hooks') );
@@ -70,8 +70,8 @@ class ThemerBasic {
 
 		// If we have a header, remove the theme header and hook in Theme Builder's.
 		if ( ! empty( $header_ids ) ) {
-			remove_action( 'optitheme_header', array( $this, 'print_default_header' ) );
-			add_action( 'optitheme_header', 'FLThemeBuilderLayoutRenderer::render_header' );
+			remove_action( 'themerbasic_header', array( $this, 'print_default_header' ) );
+			add_action( 'themerbasic_header', 'FLThemeBuilderLayoutRenderer::render_header' );
 		}
 
 		// Get the footer ID.
@@ -79,8 +79,8 @@ class ThemerBasic {
 
 		// If we have a footer, remove the theme footer and hook in Theme Builder's.
 		if ( ! empty( $footer_ids ) ) {
-			remove_action( 'optitheme_footer', array( $this, 'print_default_footer' ) );
-			add_action( 'optitheme_footer', 'FLThemeBuilderLayoutRenderer::render_footer' );
+			remove_action( 'themerbasic_footer', array( $this, 'print_default_footer' ) );
+			add_action( 'themerbasic_footer', 'FLThemeBuilderLayoutRenderer::render_footer' );
 		}
 	}
 
@@ -101,22 +101,22 @@ class ThemerBasic {
 			array(
 				'label' => 'Header',
 				'hooks' => array(
-					'optitheme_before_header' => 'Before Header',
-					'optitheme_after_header'  => 'After Header',
+					'themerbasic_before_header' => 'Before Header',
+					'themerbasic_after_header'  => 'After Header',
 				)
 			),
 			array(
 				'label' => 'Content',
 				'hooks' => array(
-					'optitheme_before_content' => 'Before Content',
-					'optitheme_after_content'  => 'After Content',
+					'themerbasic_before_content' => 'Before Content',
+					'themerbasic_after_content'  => 'After Content',
 				)
 			),
 			array(
 				'label' => 'Footer',
 				'hooks' => array(
-					'optitheme_before_footer' => 'Before Footer',
-					'optitheme_after_footer'  => 'After Footer',
+					'themerbasic_before_footer' => 'Before Footer',
+					'themerbasic_after_footer'  => 'After Footer',
 				)
 			)
 		);
