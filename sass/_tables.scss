@@ -1,0 +1,15 @@
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+
+  th, td {
+    padding: .75rem;
+    vertical-align: top;
+    border-bottom: 1px solid #eceeef;
+  }
+  thead th {
+    vertical-align: bottom;
+    border-bottom: (2 * 1px) solid #eceeef;
+  }
+}

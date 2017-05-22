@@ -1,0 +1,57 @@
+
+input[type=text],
+input[type=search],
+input[type=tel],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=number],
+input[type=email],
+input[type=password],
+input[type=file],
+input[type=color],
+input[type=password],
+input[type=url],
+textarea,
+select {
+  display: block;
+  width: 100%;
+  color: #464a4c;
+  background-color: #fff;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: .25rem;
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+}
+
+input[type=text]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=month]:focus,
+input[type=week]:focus,
+input[type=time]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=file]:focus,
+input[type=color]:focus,
+input[type=password]:focus,
+input[type=url]:focus,
+textarea:focus,
+select:focus {
+  border-color: #5cb3fd;
+  outline: 0;
+}

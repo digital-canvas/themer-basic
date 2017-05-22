@@ -1,0 +1,36 @@
+/*!
+ Theme Name:   Themer Basic
+ Theme URI:    http://www.digitalcanvas.com
+ Description:  Minimal, fast, blank theme for use with Beaver Builder and Beaver Themer
+ Author:       Digital Canvas
+ Author URI:   https://www.digitalcanvas.com
+ Version:      0.1
+ Tags: page-builder, beaver-builder, beaver-themer
+*/
+
+// Include variable overrides
+@import "variables";
+
+// Include desired bootstrap modules
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/reboot";
+
+@import "forms";
+@import "tables";
+@import "buttons";
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
