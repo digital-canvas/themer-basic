@@ -32,7 +32,7 @@ function themerbasic_scripts() {
 	wp_deregister_style( 'font-awesome' );
 	wp_register_style(
 		'font-awesome',
-		get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css',
+		get_stylesheet_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css',
 		array(),
 		'4.7.0'
 	);
