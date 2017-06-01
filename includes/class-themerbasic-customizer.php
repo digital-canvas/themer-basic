@@ -13,7 +13,7 @@ class ThemerBasic_Customizer {
 	 */
 	public function __construct( $wp_manager ) {
 		$this->manager = $wp_manager;
-		$this->addTypographySettings();
+		$this->add_typography_settings();
 	}
 
 	/**
@@ -29,7 +29,7 @@ class ThemerBasic_Customizer {
 	/**
 	 * Adds font settings
 	 */
-	public function addTypographySettings() {
+	public function add_typography_settings() {
 		//      $this->manager->add_section( 'typography', array(
 		//          'title'    => 'Typography',
 		//          'priority' => 35,

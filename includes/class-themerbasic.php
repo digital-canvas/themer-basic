@@ -10,7 +10,7 @@ class ThemerBasic {
 		add_action( 'after_setup_theme', array( $this, 'register_beaver_themer_support' ) );
 		add_action( 'wp', array( $this, 'header_footer_render' ) );
 		add_filter( 'fl_theme_builder_part_hooks', array( $this, 'register_part_hooks' ) );
-		//add_action( 'customize_register', array( 'Optitheme_Customizer', 'register' ) );
+		//add_action( 'customize_register', array( 'ThemerBasic_Customizer', 'register' ) );
 	}
 
 	/**
