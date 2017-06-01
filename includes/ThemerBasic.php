@@ -9,7 +9,7 @@ class ThemerBasic {
 		add_action( 'themerbasic_footer', array( $this, 'print_default_footer' ) );
 		add_action( 'after_setup_theme', array( $this, 'register_beaver_themer_support' ) );
 		add_action( 'wp', array( $this, 'header_footer_render' ) );
-		add_filter( 'fl_theme_builder_part_hooks', array( $this, 'register_part_hooks') );
+		add_filter( 'fl_theme_builder_part_hooks', array( $this, 'register_part_hooks' ) );
 		//add_action( 'customize_register', array( 'Optitheme_Customizer', 'register' ) );
 	}
 
@@ -103,22 +103,22 @@ class ThemerBasic {
 				'hooks' => array(
 					'themerbasic_before_header' => 'Before Header',
 					'themerbasic_after_header'  => 'After Header',
-				)
+				),
 			),
 			array(
 				'label' => 'Content',
 				'hooks' => array(
 					'themerbasic_before_content' => 'Before Content',
 					'themerbasic_after_content'  => 'After Content',
-				)
+				),
 			),
 			array(
 				'label' => 'Footer',
 				'hooks' => array(
 					'themerbasic_before_footer' => 'Before Footer',
 					'themerbasic_after_footer'  => 'After Footer',
-				)
-			)
+				),
+			),
 		);
 	}
 }

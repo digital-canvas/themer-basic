@@ -30,19 +30,19 @@ class ThemerBasic_Customizer {
 	 * Adds font settings
 	 */
 	public function addTypographySettings() {
-//		$this->manager->add_section( 'typography', array(
-//			'title'    => 'Typography',
-//			'priority' => 35,
-//		) );
-//		$this->manager->add_setting( 'typography_font_family', array(
-//			'default' => 'Arial, Times, serif',
-//		) );
-//		$this->manager->add_control( 'typography_font_family', array(
-//			'label'    => 'Font Family',
-//			'section'  => 'typography',
-//			'type'     => 'text',
-//			'priority' => 1
-//		) );
+		//      $this->manager->add_section( 'typography', array(
+		//          'title'    => 'Typography',
+		//          'priority' => 35,
+		//      ) );
+		//      $this->manager->add_setting( 'typography_font_family', array(
+		//          'default' => 'Arial, Times, serif',
+		//      ) );
+		//      $this->manager->add_control( 'typography_font_family', array(
+		//          'label'    => 'Font Family',
+		//          'section'  => 'typography',
+		//          'type'     => 'text',
+		//          'priority' => 1
+		//      ) );
 	}
 
 
