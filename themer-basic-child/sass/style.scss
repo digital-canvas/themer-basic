@@ -1,0 +1,22 @@
+/*!
+ Theme Name:   Themer Basic Child Theme
+ Theme URI:    http://www.digitalcanvas.com
+ Description:  Minimal, fast, blank theme for use with Beaver Builder and Beaver Themer
+ Author:       Digital Canvas
+ Author URI:   https://www.digitalcanvas.com
+ Version:      0.1
+ Tags: page-builder, beaver-builder, beaver-themer
+ template: themer-basic
+*/
+
+@import "variables";
+
+// Import parent styles
+// Uncomment this to include the entire parent stylesheet
+// If this is done make sure to uncomment the line that says `$stylesheets = 'child-only';` in functions.php or the styles will be included twice
+// @import "../../themer-basic/sass/style";
+
+// Alternatively if you want to customize which parts are included you can uncomment this line
+// You can comment out any modules you do not need.
+// @import "parent";
+

@@ -11,10 +11,8 @@
 // Include variable overrides
 @import "variables";
 
-// Include desired bootstrap modules
-@import "bootstrap/variables";
-
 // Include bootstrap reset
+@import "bootstrap/variables";
 @import "bootstrap/mixins";
 @import "bootstrap/reboot";
 
@@ -25,16 +23,9 @@
 @import "forms";
 @import "tables";
 @import "buttons";
+@import "elements";
 
-html, body {
-    margin: 0;
-    padding: 0;
-}
 
-img {
-    max-width: 100%;
-    height: auto;
-}
 
 
 

@@ -11,7 +11,7 @@ add_action( 'wp_enqueue_scripts', 'themerbasic_styles' );
  * Add theme stylesheet
  */
 function themerbasic_styles() {
-	wp_enqueue_style( 'themerbasic', get_stylesheet_uri() );
+	wp_enqueue_style( 'themerbasic', get_template_directory_uri() . '/style.css' );
 }
 
 add_action( 'wp_enqueue_scripts', 'themerbasic_scripts' );
@@ -32,7 +32,7 @@ function themerbasic_scripts() {
 	wp_deregister_style( 'font-awesome' );
 	wp_register_style(
 		'font-awesome',
-		get_stylesheet_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css',
+		get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css',
 		array(),
 		'4.7.0'
 	);

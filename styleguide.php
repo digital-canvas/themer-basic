@@ -1,3 +1,4 @@
+<?php /* Template Name: Style Guide */ ?>
 <?php get_header(); ?>
 
 <?php do_action( 'themerbasic_before_content' ); ?>
@@ -33,9 +34,9 @@
 
 		</div>
 
-        <hr>
+		<hr>
 
-        <h2>Paragraphs</h2>
+		<h2>Paragraphs</h2>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet dignissim sapien, ut vehicula dui
 			tempus
@@ -56,10 +57,10 @@
 			Pellentesque tristique dapibus nisl quis consectetur. Aenean auctor cursus neque, ac luctus mi tempor
 			id.</p>
 
-        <hr>
+		<hr>
 		<div>
 
-            <h2>Lists</h2>
+			<h2>Lists</h2>
 
 			<ul>
 				<li>Lorem ipsum dolor sit amet</li>
@@ -102,11 +103,11 @@
 			<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
 		</dl>
 
-        <hr>
+		<hr>
 
-        <h2>Tables</h2>
+		<h2>Tables</h2>
 
-        <h5>Basic Table styling</h5>
+		<h5>Basic Table styling</h5>
 		<table>
 			<caption>This is an example table, and this is its caption to describe the contents.</caption>
 			<thead>
@@ -139,103 +140,103 @@
 			</tbody>
 		</table>
 
-        <h5>Add table-wide class to make table full width</h5>
-        <table class="table-wide">
-            <thead>
-            <tr>
-                <th>Table heading</th>
-                <th>Table heading</th>
-                <th>Table heading</th>
-                <th>Table heading</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-            </tr>
-            <tr>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-            </tr>
-            <tr>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-            </tr>
-            </tbody>
-        </table>
+		<h5>Add table-wide class to make table full width</h5>
+		<table class="table-wide">
+			<thead>
+			<tr>
+				<th>Table heading</th>
+				<th>Table heading</th>
+				<th>Table heading</th>
+				<th>Table heading</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+			</tr>
+			<tr>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+			</tr>
+			<tr>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+			</tr>
+			</tbody>
+		</table>
 
-        <h5>Add table-border class to add borders</h5>
-        <table class="table-border">
-            <thead>
-            <tr>
-                <th>Table heading</th>
-                <th>Table heading</th>
-                <th>Table heading</th>
-                <th>Table heading</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-            </tr>
-            <tr>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-            </tr>
-            <tr>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-            </tr>
-            </tbody>
-        </table>
+		<h5>Add table-border class to add borders</h5>
+		<table class="table-border">
+			<thead>
+			<tr>
+				<th>Table heading</th>
+				<th>Table heading</th>
+				<th>Table heading</th>
+				<th>Table heading</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+			</tr>
+			<tr>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+			</tr>
+			<tr>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+			</tr>
+			</tbody>
+		</table>
 
-        <h5>Add table-stripe class to color alt rows</h5>
-        <table class="table-stripe">
-            <thead>
-            <tr>
-                <th>Table heading</th>
-                <th>Table heading</th>
-                <th>Table heading</th>
-                <th>Table heading</th>
-            </tr>
-            </thead>
-            <tr>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-            </tr>
-            <tr>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-            </tr>
-            <tr>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-            </tr>
-        </table>
+		<h5>Add table-stripe class to color alt rows</h5>
+		<table class="table-stripe">
+			<thead>
+			<tr>
+				<th>Table heading</th>
+				<th>Table heading</th>
+				<th>Table heading</th>
+				<th>Table heading</th>
+			</tr>
+			</thead>
+			<tr>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+			</tr>
+			<tr>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+			</tr>
+			<tr>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+				<td>Table cell</td>
+			</tr>
+		</table>
 
-        <hr>
+		<hr>
 
-        <h2>Address</h2>
+		<h2>Address</h2>
 		<address>
 			<strong>Twitter, Inc.</strong><br>
 			1355 Market St, Suite 900<br>
@@ -243,15 +244,15 @@
 			<abbr title="Phone">P:</abbr> (123) 456-7890
 		</address>
 
-        <h2>Blockquote</h2>
+		<h2>Blockquote</h2>
 		<blockquote class="blockquote">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
 			<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
 		</blockquote>
 
-        <hr>
+		<hr>
 
-        <h2>Form</h2>
+		<h2>Form</h2>
 		<form class="bd-example">
 			<fieldset>
 				<legend>Example legend</legend>
@@ -338,97 +339,96 @@
 					<output name="result" id="output">100</output>
 				</p>
 
-                <div class="form-group">
-                    <label for="output">Example inline</label>
-                    <div class="form-inline">
-                        <label for="input-inline-1">First Name:</label>
-                        <input type="text" id="input-inline-1" placeholder="Example input">
-                        <label for="input-inline-2">Last Name</label>
-                        <input type="text" id="input-inline-2" placeholder="Example input">
-                        <input type="text" id="input-inline-3" placeholder="Example input">
-                    </div>
-                </div>
+				<div class="form-group">
+					<label for="output">Example inline</label>
+					<div class="form-inline">
+						<label for="input-inline-1">First Name:</label>
+						<input type="text" id="input-inline-1" placeholder="Example input">
+						<label for="input-inline-2">Last Name</label>
+						<input type="text" id="input-inline-2" placeholder="Example input">
+						<input type="text" id="input-inline-3" placeholder="Example input">
+					</div>
+				</div>
 
-                <h2>Buttons</h2>
+				<h2>Buttons</h2>
 
 				<p>
 					<button type="submit">Button submit</button>
 					<input type="submit" value="Input submit button">
 					<input type="button" value="Input button">
-                    <button type="submit" disabled="">Disabled</button>
+					<button type="submit" disabled="">Disabled</button>
 				</p>
 
-                <h5>Colors</h5>
-                <p>
+				<h5>Colors</h5>
+				<p>
 
-                    <button type="button">Default</button>
-                    <button type="button" class="button-blue">button-blue</button>
-                    <button type="button" class="button-red">button-red</button>
-                    <button type="button" class="button-green">button-green</button>
-                    <button type="button" class="button-orange">button-orange</button>
-                    <button type="button" class="button-yellow">button-yellow</button>
-                    <button type="button" class="button-teal">button-teal</button>
-                    <button type="button" class="button-pink">button-pink</button>
-                    <button type="button" class="button-purple">button-purple</button>
-                    <button type="button" class="button-gray">button-gray</button>
-                    <button type="button" class="button-white">button-white</button>
-                    <button type="button" class="button-black">button-black</button>
-                </p>
+					<button type="button">Default</button>
+					<button type="button" class="button-blue">button-blue</button>
+					<button type="button" class="button-red">button-red</button>
+					<button type="button" class="button-green">button-green</button>
+					<button type="button" class="button-orange">button-orange</button>
+					<button type="button" class="button-yellow">button-yellow</button>
+					<button type="button" class="button-teal">button-teal</button>
+					<button type="button" class="button-pink">button-pink</button>
+					<button type="button" class="button-purple">button-purple</button>
+					<button type="button" class="button-gray">button-gray</button>
+					<button type="button" class="button-white">button-white</button>
+					<button type="button" class="button-black">button-black</button>
+				</p>
 
-                <h5>Outline</h5>
-                <p>
+				<h5>Outline</h5>
+				<p>
 
-                    <button type="button" class="button-outline">button-outline</button>
-                    <button type="button" class="button-blue-outline">button-blue-outline</button>
-                    <button type="button" class="button-red-outline">button-red-outline</button>
-                    <button type="button" class="button-green-outline">button-green-outline</button>
-                    <button type="button" class="button-orange-outline">button-orange-outline</button>
-                    <button type="button" class="button-yellow-outline">button-yellow-outline</button>
-                    <button type="button" class="button-teal-outline">button-teal-outline</button>
-                    <button type="button" class="button-pink-outline">button-pink-outline</button>
-                    <button type="button" class="button-purple-outline">button-purple-outline</button>
-                </p>
+					<button type="button" class="button-outline">button-outline</button>
+					<button type="button" class="button-blue-outline">button-blue-outline</button>
+					<button type="button" class="button-red-outline">button-red-outline</button>
+					<button type="button" class="button-green-outline">button-green-outline</button>
+					<button type="button" class="button-orange-outline">button-orange-outline</button>
+					<button type="button" class="button-yellow-outline">button-yellow-outline</button>
+					<button type="button" class="button-teal-outline">button-teal-outline</button>
+					<button type="button" class="button-pink-outline">button-pink-outline</button>
+					<button type="button" class="button-purple-outline">button-purple-outline</button>
+				</p>
 
-                <h5>Shapes</h5>
-                <p>
+				<h5>Shapes</h5>
+				<p>
 
-                    <button type="button">Default</button>
-                    <button type="button" class="button-round">button-round</button>
-                    <button type="button" class="button-rectangle">button-rectangle</button>
-                    <button type="button" class="button-wide">button-wide</button>
-                    <button type="button" class="button-extrawide">button-extrawide</button>
-                    <button type="button" class="button-block">button-block</button>
-                </p>
+					<button type="button">Default</button>
+					<button type="button" class="button-round">button-round</button>
+					<button type="button" class="button-rectangle">button-rectangle</button>
+					<button type="button" class="button-wide">button-wide</button>
+					<button type="button" class="button-extrawide">button-extrawide</button>
+					<button type="button" class="button-block">button-block</button>
+				</p>
 
-                <h5>Sizes</h5>
-                <p>
+				<h5>Sizes</h5>
+				<p>
 
-                    <button type="button" class="button-small">button-small</button>
-                    <button type="button">Default</button>
-                    <button type="button" class="button-large">button-large</button>
-                </p>
+					<button type="button" class="button-small">button-small</button>
+					<button type="button">Default</button>
+					<button type="button" class="button-large">button-large</button>
+				</p>
 			</fieldset>
 		</form>
 
-        <hr>
+		<hr>
 
-        <h2>Alignment</h2>
+		<h2>Alignment</h2>
 
-        <p class="text-left">
-            Add text-left class for Left aligned text.
-        </p>
-        <p class="text-center">
-            Add text-center class for Center aligned text.
-        </p>
-        <p class="text-right">
-            Add text-right class for Right aligned text.
-        </p>
-        <p class="text-justify">
-            Add text-justify class for Justified text.
-        </p>
+		<p class="text-left">
+			Add text-left class for Left aligned text.
+		</p>
+		<p class="text-center">
+			Add text-center class for Center aligned text.
+		</p>
+		<p class="text-right">
+			Add text-right class for Right aligned text.
+		</p>
+		<p class="text-justify">
+			Add text-justify class for Justified text.
+		</p>
 
 	</div>
-
 
 
 	<?php the_content() ?>
