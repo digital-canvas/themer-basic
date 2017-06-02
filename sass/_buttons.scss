@@ -1,8 +1,5 @@
-button,
-input[type=button],
-input[type=reset],
-input[type=submit],
-.button {
+
+@mixin button($background: $btn-primary-bg, $color: $btn-primary-color, $border: $btn-primary-border) {
   display: inline-block;
   font-weight: 400;
   line-height: 1.25;
@@ -13,45 +10,206 @@ input[type=submit],
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border: 1px solid #0275d8;
+  border: 1px solid $border;
   padding: .5rem 1rem;
   font-size: 1rem;
   border-radius: .25rem;
   -webkit-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
-  color: #fff;
-  background-color: #0275d8;
+  color: $color;
+  background-color: $background;
   background-image: none;
   text-decoration: none;
   outline: 0;
+  cursor: pointer;
+
+  &:hover {
+    color: $color;
+    background-color: darken($background, 10%);
+    border-color: darken($background, 12%);
+  }
+
+  &:active {
+    color: $color;
+    background-color: darken($background, 10%);
+    border-color: darken($background, 12%);
+  }
+
+  &:focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(2,117,216,.5);
+    box-shadow: 0 0 0 2px rgba(2,117,216,.5);
+  }
+
+  &.disabled, &[disabled] {
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65;
+    &:hover {
+      color: $color;
+      background-color: $background;
+      border-color: $background;
+    }
+  }
 }
 
-button:hover,
-input[type=button]:hover,
-input[type=reset]:hover,
-input[type=submit]:hover,
-.button:hover {
-  color: #fff;
-  background-color: #025aa5;
-  border-color: #01549b;
+@mixin button-colorize($background: $blue, $color: $white, $border: $background) {
+  border-color: $border;
+  color: $color;
+  background-color: $background;
+
+  &:hover {
+    color: $color;
+    background-color: darken($background, 10%);
+    border-color: darken($border, 12%);
+  }
+
+  &:active {
+    color: $color;
+    background-color: darken($background, 10%);
+    border-color: darken($border, 12%);
+  }
+
+  &.disabled, &[disabled] {
+    &:hover {
+      color: $color;
+      background-color: $background;
+      border-color: $border;
+    }
+  }
 }
 
-button:active,
-input[type=button]:active,
-input[type=reset]:active,
-input[type=submit]:active,
-.button:active {
-  color: #fff;
-  background-color: #025aa5;
-  border-color: #01549b;
+@mixin button-outline($color: $blue, $color-hover: $white) {
+  color: $color;
+  background-image: none;
+  background-color: transparent;
+  border-color: $color;
+
+  &:hover {
+    color: $color-hover;
+    background-color: $color;
+    border-color: $color;
+  }
+
+  &:active {
+    color: $color-hover;
+    background-color: $color;
+    border-color: $color;
+  }
+
+  &.disabled, &[disabled] {
+    &:hover {
+      color: $color;
+      background-color: transparent;
+    }
+  }
 }
 
-button:focus,
-input[type=button]:focus,
-input[type=reset]:focus,
-input[type=submit]:focus,
-.button:focus {
-  -webkit-box-shadow: 0 0 0 2px rgba(2,117,216,.5);
-  box-shadow: 0 0 0 2px rgba(2,117,216,.5);
+button,
+input[type=button],
+input[type=reset],
+input[type=submit],
+.button {
+  @include button($btn-primary-bg, $btn-primary-color, $btn-primary-border)
+}
+
+.button-blue {
+  @include button-colorize($blue)
+}
+.button-green {
+  @include button-colorize($green)
+}
+.button-red {
+  @include button-colorize($red)
+}
+.button-yellow {
+  @include button-colorize($yellow, $gray)
+}
+.button-orange {
+  @include button-colorize($orange)
+}
+.button-teal {
+  @include button-colorize($teal)
+}
+.button-pink {
+  @include button-colorize($pink)
+}
+.button-purple {
+  @include button-colorize($purple)
+}
+.button-gray {
+  @include button-colorize($gray-lighter, $gray-dark, $gray-light)
+}
+.button-white {
+  @include button-colorize($white, $gray-dark, $gray-light)
+}
+.button-black {
+  @include button-colorize($black)
+}
+.button-outline {
+  @include button-outline($blue);
+}
+.button-blue-outline {
+  @include button-outline($blue);
+}
+.button-green-outline {
+  @include button-outline($green)
+}
+.button-red-outline {
+  @include button-outline($red)
+}
+.button-yellow-outline {
+  @include button-outline($yellow, $gray)
+}
+.button-orange-outline {
+  @include button-outline($orange)
+}
+.button-teal-outline {
+  @include button-outline($teal)
+}
+.button-pink-outline {
+  @include button-outline($pink)
+}
+.button-purple-outline {
+  @include button-outline($purple)
+}
+
+
+.button-small {
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  border-radius: .2rem;
+}
+.button-large {
+  padding: .75rem 1.5rem;
+  border-radius: .3rem;
+  font-size: 1.25rem;
+}
+.button-wide {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.button-extrawide {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.button-block {
+  display: block;
+  width: 100%;
+  margin-top: .5rem;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.button-block {
+    width: 100%;
+  }
+}
+.button-round {
+  border-radius: 2rem;
+}
+.button-rectangle {
+  border-radius: 0;
 }

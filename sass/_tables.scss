@@ -1,5 +1,5 @@
 table {
-  width: 100%;
+  width: auto;
   max-width: 100%;
   margin-bottom: 1rem;
 
@@ -10,6 +10,17 @@ table {
   }
   thead th {
     vertical-align: bottom;
-    border-bottom: (2 * 1px) solid #eceeef;
+    border-top: (2 * 1px) solid #eceeef;
   }
+}
+.table-border {
+  th, td {
+    border: 1px solid #eceeef;
+  }
+}
+.table-wide {
+  width: 100%;
+}
+.table-stripe tbody tr:nth-of-type(odd) {
+  background-color: rgba(0,0,0,.05);
 }

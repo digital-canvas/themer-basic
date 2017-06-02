@@ -1,3 +1,6 @@
+.form-row, .form-group {
+  margin-bottom: 15px;
+}
 
 input[type=text],
 input[type=search],
@@ -55,3 +58,38 @@ select:focus {
   border-color: #5cb3fd;
   outline: 0;
 }
+
+.form-inline {
+  label {
+    margin-bottom: 0;
+  }
+
+  input[type=text],
+  input[type=search],
+  input[type=tel],
+  input[type=date],
+  input[type=datetime],
+  input[type=datetime-local],
+  input[type=month],
+  input[type=week],
+  input[type=time],
+  input[type=number],
+  input[type=email],
+  input[type=password],
+  input[type=file],
+  input[type=color],
+  input[type=password],
+  input[type=url],
+  textarea,
+  select {
+    vertical-align: middle;
+    display: inline-block;
+    width: auto;
+  }
+
+  .form-row, .form-group {
+    margin-bottom: 0;
+  }
+}
+
+
