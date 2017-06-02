@@ -428,7 +428,16 @@
 			Add text-justify class for Justified text.
 		</p>
 
+		<h2>Text Case</h2>
+
+		<p>Add text-lowercase to <span class="text-lowercase">display text in all lowercase</span></p>
+		<p>Add text-uppercase to <span class="text-uppercase">display text in all uppercase</span></p>
+		<p>Add text-capitalize to <span class="text-capitalize">capitalize the first letter of each word</span></p>
+
+
 	</div>
+
+
 
 
 	<?php the_content() ?>
