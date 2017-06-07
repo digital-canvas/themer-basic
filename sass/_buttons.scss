@@ -29,6 +29,7 @@
   cursor: pointer;
 
   &:hover {
+	text-decoration: none;
     color: $color;
     background-color: darken($background, 10%);
     border-color: darken($background, 12%);
@@ -118,6 +119,9 @@ input[type=submit],
 .button {
   @include button($btn-primary-bg, $btn-primary-color, $btn-primary-border)
 }
+a.button:hover {
+  text-decoration: none;
+}
 
 .button-blue {
   @include button-colorize($blue)
@@ -204,6 +208,7 @@ input[type=submit],
   width: 100%;
   margin-top: .5rem;
 }
+.button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {

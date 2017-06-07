@@ -3,6 +3,7 @@
 require __DIR__ . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'class-themerbasic.php';
 require __DIR__ . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'class-themerbasic-customizer.php';
 require __DIR__ . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'class-themerbasic-fontlist.php';
+require __DIR__ . DIRECTORY_SEPARATOR . 'bb-modules' . DIRECTORY_SEPARATOR . 'bb-modules.php';
 
 $themerbasic = new ThemerBasic();
 

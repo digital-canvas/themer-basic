@@ -65,6 +65,11 @@ class ThemerBasic {
 	 * Activate Beaver Themer header and footer
 	 */
 	public function header_footer_render() {
+
+		if ( ! class_exists( 'FLBuilder' ) ) {
+			return;
+		}
+
 		// Get the header ID.
 		$header_ids = FLThemeBuilderLayoutData::get_current_page_header_ids();
 
