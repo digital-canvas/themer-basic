@@ -4,7 +4,7 @@
 <?php do_action( 'themerbasic_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
-	<div class="content-container">
+	<div class="container">
 
 		<div>
 
@@ -246,7 +246,7 @@
 
 		<h2>Blockquote</h2>
 
-<pre class="well"><code>
+		<pre class="well"><code>
 &lt;blockquote&gt;
 	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
 	&lt;footer&gt;Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
@@ -430,7 +430,7 @@
 
 		<hr>
 		<h2>Pagination</h2>
-<pre class="well"><code>
+		<pre class="well"><code>
 the_posts_pagination( array(
 	'prev_text' =&gt; '&lt;i class="fa fa-arrow-left"&gt;&lt;/i&gt; Previous',
 	'next_text' =&gt; 'Next &lt;i class="fa fa-arrow-right"&gt;&lt;/i&gt;',
@@ -453,10 +453,7 @@ the_posts_pagination( array(
 
 		<h2>Alignment</h2>
 
-		<p>
-			Add content-container to set a max width.
-			Should be used when beaver builder is not used.
-		</p>
+
 		<p class="text-left">
 			Add text-left class for Left aligned text.
 		</p>
@@ -503,14 +500,24 @@ the_posts_pagination( array(
 			alert alert-warning
 		</div>
 
+		<hr>
+		<h2>Containers</h2>
 
+		<p>
+			Add class content-container to set a max width.<br>
+			Only applied when post is not managed by beaver builder.
+		</p>
+
+		<p>
+			Add class container to set a max width.<br>
+			Still applied on beaver builder pages.<br>
+			Use to wrap content in headers and footers or other content outside the beaver builder content.
+		</p>
 
 	</div>
 
 
-
-
-	<?php the_content() ?>
+	<div class="content-container"><?php the_content() ?></div>
 
 <?php endwhile; ?>
 <?php do_action( 'themerbasic_after_content' ); ?>
