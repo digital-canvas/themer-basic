@@ -38,10 +38,14 @@
   @include sr-only-focusable();
 }
 
-.content-container {
+.content-container, .container {
   max-width: $max-width;
   margin: 0 auto;
   padding: $padding;
+}
+.fl-builder .content-container {
+  max-width: none;
+  padding: 0;
 }
 
 .well {
