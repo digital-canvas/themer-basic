@@ -3,6 +3,16 @@
 ////////////////////////
 
 // $spacer:   1rem !default;
+$border-color:   #ddd !default;
+
+/////////////////////////
+// Breakpoints and Sizes
+////////////////////////
+// Change these to match global beaver builder settings
+$padding:   20px !default; // change to match default module padding
+$max-width: 1100px !default;
+$small: 768px !default;
+$medium: 992px !default;
 
 /////////////////////////
 // Colors

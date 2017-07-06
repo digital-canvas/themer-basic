@@ -4,7 +4,7 @@
 <?php do_action( 'themerbasic_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
-	<div style="max-width: 1100px; width:100%; margin:0 auto; margin: 25px;">
+	<div class="content-container">
 
 		<div>
 
@@ -245,6 +245,23 @@
 		</address>
 
 		<h2>Blockquote</h2>
+
+<pre class="well"><code>
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+	&lt;footer&gt;Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class="blockquote"&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+	&lt;footer&gt;Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
+</code></pre>
+
+		<blockquote>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+			<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+		</blockquote>
 		<blockquote class="blockquote">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
 			<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
@@ -412,9 +429,34 @@
 		</form>
 
 		<hr>
+		<h2>Pagination</h2>
+<pre class="well"><code>
+the_posts_pagination( array(
+	'prev_text' =&gt; '&lt;i class="fa fa-arrow-left"&gt;&lt;/i&gt; Previous',
+	'next_text' =&gt; 'Next &lt;i class="fa fa-arrow-right"&gt;&lt;/i&gt;',
+) );
+</code></pre>
+		<nav class="navigation pagination" role="navigation">
+			<h2 class="screen-reader-text">Posts navigation</h2>
+			<div class="nav-links"><a class="prev page-numbers" href="#"><i class="fa fa-arrow-left"></i> Previous</a>
+				<a class="page-numbers" href="#">1</a>
+				<span class="page-numbers dots">…</span>
+				<a class="page-numbers" href="#">11</a>
+				<span class="page-numbers current">12</span>
+				<a class="page-numbers" href="#">13</a>
+				<span class="page-numbers dots">…</span>
+				<a class="page-numbers" href="#">22</a>
+				<a class="next page-numbers" href="#">Next <i class="fa fa-arrow-right"></i></a></div>
+		</nav>
+
+		<hr>
 
 		<h2>Alignment</h2>
 
+		<p>
+			Add content-container to set a max width.
+			Should be used when beaver builder is not used.
+		</p>
 		<p class="text-left">
 			Add text-left class for Left aligned text.
 		</p>
@@ -433,6 +475,34 @@
 		<p>Add text-lowercase to <span class="text-lowercase">display text in all lowercase</span></p>
 		<p>Add text-uppercase to <span class="text-uppercase">display text in all uppercase</span></p>
 		<p>Add text-capitalize to <span class="text-capitalize">capitalize the first letter of each word</span></p>
+
+		<h2>Text Colors</h2>
+
+		<span class="text-black">text-black</span>
+		<span class="text-white">text-white</span>
+		<span class="text-gray">text-gray</span>
+		<span class="text-blue">text-blue</span>
+		<span class="text-red">text-red</span>
+		<span class="text-orange">text-orange</span>
+		<span class="text-yellow">text-yellow</span>
+		<span class="text-green">text-green</span>
+		<span class="text-teal">text-teal</span>
+		<span class="text-pink">text-pink</span>
+		<span class="text-purple">text-purple</span>
+
+		<div class="alert alert-success">
+			alert alert-success
+		</div>
+		<div class="alert alert-danger">
+			alert alert-danger
+		</div>
+		<div class="alert alert-info">
+			alert alert-info
+		</div>
+		<div class="alert alert-warning">
+			alert alert-warning
+		</div>
+
 
 
 	</div>

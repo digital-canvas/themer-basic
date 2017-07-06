@@ -1,0 +1,22 @@
+.pagination {
+  margin: 1em 0;
+  .page-numbers {
+	display: inline-block;
+	padding: 6px 12px;
+	margin:0;
+	background-color: $white;
+	color: $blue;
+	border: 1px solid $border-color;
+	text-decoration: none;
+	&:hover {
+	  background-color: $gray-lightest;
+	  color: #23527c;
+	  text-decoration: none;
+	}
+	&.current {
+	  border-color: $blue;
+	  background-color: $blue;
+	  color: $white;
+	}
+  }
+}

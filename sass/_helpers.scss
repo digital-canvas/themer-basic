@@ -1,7 +1,15 @@
 ///////////////////
 // Helper Classes
 ///////////////////
-
+.text-italic {
+  font-style: italic;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-normal {
+  font-weight: normal;
+}
 .text-left {
   text-align: left;
 }
@@ -30,3 +38,48 @@
   @include sr-only-focusable();
 }
 
+.content-container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: $padding;
+}
+
+.well {
+  padding: 1rem;
+  border: solid 1px $border-color;
+  border-radius: $border-radius;
+  background-color: $gray-lightest;
+}
+.text-white {
+  color: $white;
+}
+.text-black {
+  color: $black;
+}
+.text-gray {
+  color: $gray;
+}
+.text-blue {
+  color: $blue;
+}
+.text-red {
+  color: $red;
+}
+.text-orange {
+  color: $orange;
+}
+.text-yellow {
+  color: $yellow;
+}
+.text-green {
+  color: $green;
+}
+.text-teal {
+  color: $teal;
+}
+.text-pink {
+  color: $pink;
+}
+.text-purple {
+  color: $purple;
+}

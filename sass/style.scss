@@ -15,6 +15,8 @@
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
 @import "bootstrap/reboot";
+@import "bootstrap/alert";
+@import "bootstrap/code";
 
 // Include modules
 @import "wordpress";
@@ -23,6 +25,8 @@
 @import "forms";
 @import "tables";
 @import "buttons";
+@import "pagination";
+@import "blockquote";
 @import "elements";
 
 
