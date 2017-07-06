@@ -66,7 +66,7 @@ class ThemerBasic {
 	 */
 	public function header_footer_render() {
 
-		if ( ! class_exists( 'FLBuilder' ) ) {
+		if ( ! class_exists( 'FLThemeBuilderLayoutData' ) ) {
 			return;
 		}
 
